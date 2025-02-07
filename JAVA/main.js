@@ -1,7 +1,13 @@
-let object = document.querySelector('p').innerText;
+function sumaKwadratów() {
+    var array = [0,1,2,3,4,5];
 
-let array = object.split('')
+    let sumaKw = 0;
 
-let sortedText = array.sort()
+    array.forEach(element => {
+        sumaKw += Math.pow(element,2)
+    });
+    
+    return sumaKw;
+}
 
-console.log(sortedText);
+console.log(sumaKwadratów())
